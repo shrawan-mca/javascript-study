@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>My Web Page</h1>
+        <input type="text" id="FN"></input>
+        <input type="text" id="SN"></input>
+        <select id="sign">
+            <option>select</option>
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+            <option>%</option>
+        </select>
+        <button type="botton" onclick="myFunction();">click to add</button>
+        <p id="demo"></p>
+        <p id="tip"></p>
+        <script type="text/javascript">
+            function myFunction(){
+                var a = document.getElementById('FN').value;
+                var b = document.getElementById('SN').value;
+                var sign = document.getElementById('sign').value;
+                if( sign === '+'){
+                    c = parseInt(a) + parseInt(b);
+                    console.log('Result = ' + c); 
+                }
+                else if( sign === '-'){
+                    c = parseInt(a) - parseInt(b);
+                    console.log('Result = ' + c); 
+                }
+                else if( sign === '*'){
+                    c = parseInt(a) * parseInt(b);
+                    console.log('Result = ' + c); 
+                }
+                else if( sign === '/'){
+                    c = parseInt(a) / parseInt(b);
+                    console.log('Result = ' + c); 
+                }
+                else if( sign === '%'){
+                    c = parseInt(a) % parseInt(b);
+                    console.log('Result = ' + c); 
+                }
+                else{
+                    console.log('Unknown operation');
+                }
+            }
+        </script>
+    </body>
+</html>
