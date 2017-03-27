@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<h1>Print Star as Piraamid</h1>
+</head>
+<body>
+
+<form name="myform" onsubmit="piramid()">
+
+<input type="text" name="mark">
+
+<input type="submit" name="submit" value="Click">
+
+<script>
+
+	function piramid(){
+
+		var x  = document.forms["myform"]["mark"].value;
+
+
+		for (var i=1; i<=x; i++){
+
+
+			for(var j=1; j<=i; j++){
+			
+				document.write(x);
+			}
+			document.write("<br>");
+		}
+
+		}
+
+</script>
+</body>
+</html>
